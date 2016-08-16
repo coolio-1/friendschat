@@ -21,4 +21,4 @@ io.on('connection', function(socket){
 });
  
 // Listen application request on port 3000
-http.listen(8080);
+http.listen(process.env.PORT || 8080);
